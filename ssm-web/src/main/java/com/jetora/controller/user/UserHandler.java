@@ -88,7 +88,7 @@ public class UserHandler {
         result.setData(userslist);
         return result;
     }
-    @Transactional
+
     @PostMapping(value = "/user/add", produces = { "application/json;charset=UTF-8" })
     public ResponseResult<User> insertSaveUser(@RequestBody User user){
         ResponseResult<User> result = new ResponseResult<>();
